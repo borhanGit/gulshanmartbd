@@ -319,6 +319,9 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'admin', 'prevent-ba
         Route::get('/whatsapp-chat', 'whatsappChat')->name('whatsapp_chat.index');
         Route::post('/whatsapp_chat/update', 'whatsappChatUpdate')->name('whatsapp_chat.update');
 
+        Route::get('/facebook-chat', 'facebookChat')->name('facebook_chat.index');
+        Route::post('/facebook-chat/update', 'facebookChatUpdate')->name('facebook_chat.update');
+
         //Facebook Settings
         Route::get('/facebook-comment', 'facebook_comment')->name('facebook-comment');
         Route::post('/facebook-comment', 'facebook_comment_update')->name('facebook-comment.update');

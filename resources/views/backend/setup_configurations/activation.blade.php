@@ -54,7 +54,7 @@
 
     <h4 class="text-center text-muted mt-4">{{ translate('Business Related') }}</h4>
     <div class="row">
-        <div class="col-lg-4">
+        <!-- <div class="col-lg-4">
             <div class="card">
                 <div class="card-header">
                     <h3 class="mb-0 h6 text-center">{{ translate('Vendor System Activation') }}</h3>
@@ -69,7 +69,7 @@
                     </label>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="col-lg-4">
             <div class="card">
                 <div class="card-header">
@@ -85,7 +85,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4">
+        <!-- <div class="col-lg-4">
             <div class="card">
                 <div class="card-header">
                     <h3 class="mb-0 h6 text-center">{{ translate('Wallet System Activation') }}</h3>
@@ -99,7 +99,7 @@
                     </label>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="col-lg-4">
             <div class="card">
                 <div class="card-header">
@@ -145,7 +145,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4">
+        <!-- <div class="col-lg-4">
             <div class="card">
                 <div class="card-header">
                     <h3 class="mb-0 h6 text-center">{{ translate('Seller Product Manage By Admin') }}</h3>
@@ -164,8 +164,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-4">
+        </div> -->
+        <!-- <div class="col-lg-4">
             <div class="card">
                 <div class="card-header">
                     <h3 class="mb-0 h6 text-center">{{ translate('Admin Approval On Seller Product') }}</h3>
@@ -184,7 +184,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="col-lg-4">
             <div class="card">
                 <div class="card-header">
@@ -221,7 +221,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4">
+        <!-- <div class="col-lg-4">
             <div class="card">
                 <div class="card-header">
                     <h3 class="mb-0 h6 text-center">{{ translate('Product External Link for Seller') }}</h3>
@@ -236,7 +236,7 @@
                     </label>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="col-lg-4">
             <div class="card">
                 <div class="card-header">
@@ -269,7 +269,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4">
+        <!-- <div class="col-lg-4">
             <div class="card">
                 <div class="card-header">
                     <h3 class="mb-0 h6 text-center">{{ translate('Newsletter Activation') }}</h3>
@@ -284,7 +284,7 @@
                     </label>
                 </div>
             </div>
-        </div>
+        </div> -->
         
         @if (addon_is_activated('wholesale'))
             <div class="col-lg-4">
@@ -346,7 +346,7 @@
             </div>
         </div>
 
-        <div class="col-lg-4">
+        <!-- <div class="col-lg-4">
             <div class="card">
                 <div class="card-header">
                     <h3 class="mb-0 h6 text-center">{{ translate('Seller Registration Verification') }}</h3>
@@ -361,7 +361,7 @@
                     </label>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="col-lg-4">
             <div class="card">
                 <div class="card-header">
@@ -379,7 +379,7 @@
             </div>
         </div>
 
-        <div class="col-lg-4">
+        <!-- <div class="col-lg-4">
             <div class="card">
                 <div class="card-header">
                     <h3 class="mb-0 h6 text-center">{{ translate('Digital Product for Seller') }}</h3>
@@ -398,7 +398,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 
     <h4 class="text-center text-muted mt-4">{{ translate('Social Media Login') }}</h4>
@@ -443,7 +443,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4">
+        <!-- <div class="col-lg-4">
             <div class="card">
                 <div class="card-header">
                     <h3 class="mb-0 h6 text-center">{{ translate('Twitter login') }}</h3>
@@ -462,8 +462,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-4">
+        </div> -->
+        <!-- <div class="col-lg-4">
             <div class="card">
                 <div class="card-header">
                     <h3 class="mb-0 h6 text-center">{{ translate('Apple login') }}</h3>
@@ -482,7 +482,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 @endsection
 
