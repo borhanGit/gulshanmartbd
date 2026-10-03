@@ -69,7 +69,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4 d-flex">
+                <!-- <div class="col-md-6 col-lg-4 d-flex">
                     <div class="card text-center px-3 py-4 w-100" data-shipping="Seller Wise Shipping Cost">
                         <img src="{{ static_asset('assets/img/shipping/seller_wise_flat_shipping.png') }}" class="card-img-top mx-auto" alt="Shipping Icon">
 
@@ -85,7 +85,7 @@
                             </p>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
 
                 <!-- Carrier Wise Shipping Cost -->

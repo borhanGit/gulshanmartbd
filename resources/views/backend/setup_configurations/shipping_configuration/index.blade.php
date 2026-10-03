@@ -93,7 +93,7 @@
                 </form>
             </div>
         </div>
-        <div class="card">
+        <!-- <div class="card">
             <div class="{{ get_setting('shipping_type') == 'seller_wise_shipping' ? 'border border-primary border-2 rounded-2' : '' }}">
                 <div class="card-header">
                     <h5 class="mb-0 h6">{{translate('Seller Wise Shipping Cost')}}</h5>
@@ -115,7 +115,7 @@
                 </div>
                 </form>
             </div>
-        </div>
+        </div> -->
 
         
 

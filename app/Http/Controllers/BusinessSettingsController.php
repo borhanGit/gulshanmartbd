@@ -289,6 +289,36 @@ class BusinessSettingsController extends Controller
         return back();
     }
 
+    public function facebookChat()
+    {
+        return view('backend.setup_configurations.facebook_chat');
+    }
+
+    public function facebookChatUpdate(Request $request)
+    {
+        foreach ($request->types as $key => $type) {
+            $this->overWriteEnvFile($type, $request[$type]);
+        }
+
+        $business_settings = BusinessSetting::where('type', 'facebook_chat')->first();
+        if (!$business_settings) {
+            $business_settings = new BusinessSetting;
+            $business_settings->type = 'facebook_chat';
+        }
+
+        $business_settings->value = 0;
+        if ($request->facebook_chat) {
+            $business_settings->value = 1;
+        }
+
+        $business_settings->save();
+
+        Artisan::call('cache:clear');
+
+        flash(translate("Settings updated successfully"))->success();
+        return back();
+    }   
+
     public function facebook_comment_update(Request $request)
     {
         foreach ($request->types as $key => $type) {
