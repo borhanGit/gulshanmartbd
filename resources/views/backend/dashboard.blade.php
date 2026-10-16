@@ -91,15 +91,17 @@
                                         </h3>
                                     </div>
                                     <!-- Sellers Products -->
-                                    <div class="d-flex justify-content-between">
-                                        <h3 class="fs-13 fw-600 text-truncate mr-2">
-                                            <span class="badge badge-md badge-dot badge-circle badge-primary mr-2"></span>
-                                            {{ translate('Sellers Products') }}
-                                        </h3>
-                                        <h3 class="fs-13 fw-600 mb-0">
-                                            {{ $total_sellers_products }}
-                                        </h3>
-                                    </div>
+                                    @if (get_setting('vendor_system_activation') == 1)
+                                        <div class="d-flex justify-content-between">
+                                            <h3 class="fs-13 fw-600 text-truncate mr-2">
+                                                <span class="badge badge-md badge-dot badge-circle badge-primary mr-2"></span>
+                                                {{ translate('Sellers Products') }}
+                                            </h3>
+                                            <h3 class="fs-13 fw-600 mb-0">
+                                                {{ $total_sellers_products }}
+                                            </h3>
+                                        </div>
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -252,6 +254,7 @@
                                             {{ single_price($admin_sale_this_month->total_sale) }}
                                         </h3>
                                     </div>
+                                    @if (get_setting('vendor_system_activation') == 1)
                                     <!-- Sellers Sales -->
                                     <div class="d-flex justify-content-between">
                                         <h3 class="fs-13 fw-600 mb-0">
@@ -263,6 +266,7 @@
                                             {{ single_price($seller_sale_this_month->total_sale) }}
                                         </h3>
                                     </div>
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -329,7 +333,7 @@
                                     </div>
                                 </div>
                             @else
-                                <div class="d-flex flex-column align-items-center justify-content-center h-100">
+                                <!-- <div class="d-flex flex-column align-items-center justify-content-center h-100">
                                     <div class="h-200px">
                                         <img src="{{ static_asset('assets/img/multivendor.jpg') }}"
                                             alt="{{ translate('multivendor') }}" class="h-100 img-fit">
@@ -338,7 +342,7 @@
                                         class="mt-4 fs-13 fw-600 text-info hov-text-primary animate-underline-primary">
                                         {{ translate('Activate Vendor System') }}
                                     </a>
-                                </div>
+                                </div> -->
                             @endif
                         </div>
                     </div>
